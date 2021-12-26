@@ -1,0 +1,33 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 13em;
+    margin: 0;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 500%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+@media (max-width: 625px) {
+    .line-1{
+        font-size: 55px;
+        margin-top: 20px;
+    }
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 1.5s steps(22) 1s 1 normal both,
+             blinkTextCursor 500ms steps(22) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 6em;}
+}
+

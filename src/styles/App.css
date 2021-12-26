@@ -1,0 +1,38 @@
+
+@media (min-width: 625px) {
+    .punkGif{
+        justify-content: right;
+    }
+    
+    .mintingDiv{
+        justify-content: left;
+    }
+}
+
+@media (max-width: 625px) {
+    .punkGif{
+        justify-content: center;
+    }
+    
+    .mintingDiv{
+        justify-content: center;
+    }
+}
+
+.media{
+    width: 26px;
+    height: 19px;
+    fill: black;
+}
+
+.twitter:hover{
+    fill: rgb(11, 120, 192);
+}
+
+.discord:hover{
+    fill: #7289DA;
+}
+
+.opensea:hover{
+    fill: rgb(33, 112, 165);
+}
