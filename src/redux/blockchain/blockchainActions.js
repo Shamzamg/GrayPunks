@@ -1,10 +1,22 @@
 // constants
 import Web3EthContract from "web3-eth-contract";
 import Web3 from "web3";
+import WalletConnectProvider from "@maticnetwork/walletconnect-provider"
+import Matic from "maticjs"
 // log
 import { fetchData } from "../data/dataActions";
 import { CHAIN_ID, NETWORK_INFOS } from "../config/globals";
 import { getDocumentTypeNodeName } from "jsdom/lib/jsdom/living/domparsing/parse5-adapter-serialization";
+
+const maticProvider = new WalletConnectProvider(
+  {
+    host: `https://rpc-mumbai.matic.today`,
+    callbacks: {
+      onConnect: console.log('connected w/ wallet connect matic'),
+      onDisconnect: console.log('disconnected w/ wallet connect matic')
+    }
+  }
+);
 
 const connectRequest = () => {
   return {
@@ -96,6 +108,25 @@ export const connect = () => {
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
+      // #------------------------- WALLET CONNECT ----------------------------
+      let maticWeb3 = new Web3(maticProvider);
+      try {
+
+          const SmartContractObj = new maticWeb3.eth.Contract(
+            abi,
+            CONFIG.CONTRACT_ADDRESS
+          );
+          dispatch(
+            connectSuccess({
+              account: accounts[0],
+              smartContract: SmartContractObj,
+              web3: web3,
+            })
+          );
+      } catch (err) {
+        dispatch(connectFailed("Something went wrong."));
+      }
+      //# ------------------------------------------------------------------------------------------
       dispatch(connectFailed("Install Metamask."));
     }
   };

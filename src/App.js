@@ -13,7 +13,7 @@ import graypunk263 from "./assets/263.png";
 import graypunk278 from "./assets/278.png";
 import graypunk354 from "./assets/354.png";
 
-import openseaSVG from "./assets/opensea.svg";
+import roadmap from "./assets/roadmap.svg";
 
 import './styles/App.css';
 
@@ -425,17 +425,15 @@ function App() {
         </Row>
 
         <Row style={{ display: "flex", flexDirection: "row", justifyContent: "center", paddingLeft: '40px', paddingRight: '40px', marginBottom: '40px'}}>
-          <Col sm={12} md={5} lg={4}>
+          <Col sm={12} md={6} lg={4}>
             <img src={graypunk263}></img>
           </Col>
-          {width > 767 ? (<><Col sm={12} md={5} lg={4}>
+          {width > 767 ? (<Col sm={12} md={6} lg={4}>
             <img src={graypunk278}></img>
-          </Col>
-          <Col sm={12} md={5} lg={4}>
+          </Col>): (<></>)}
+          {width > 991 ? (<Col sm={12} md={5} lg={4}>
             <img src={graypunk354}></img>
-          </Col></>):(<></>)
-          }
-
+          </Col>) : (<></>)}
         </Row>
 
         <Row style={{ backgroundColor: 'black', color: 'white', marginBottom: '20px'}}>
@@ -449,6 +447,12 @@ function App() {
           </Col>
         </Row>
         
+        <Row style={{ display: "flex", flexDirection: "row", justifyContent: "center", paddingTop: '10px', borderTop: 'solid 1px', marginBottom: '20px'}}>
+          <Col>
+            <img src={roadmap} style={{maxWidth: "100%", maxHeight: "100%"}}></img>
+          </Col>
+        </Row>
+
         <Row style={{ display: "flex", flexDirection: "row", justifyContent: "center", paddingTop: '10px', borderTop: 'solid 1px'}}>
           <Col style={{ display: "flex", justifyContent: "left"}}>
             2021 GrayPunks

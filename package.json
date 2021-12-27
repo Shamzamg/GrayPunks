@@ -4,7 +4,9 @@
   "description": "There are 9,999 GrayPunks. All of them are unique and live in a lost grayscale world. They are damned from coloured life and wander in a parallel dimension as CryptoPunks cousins. In this realm, fees are low and the kingdom is called Polygon. The ownership of a GrayPunk will grant you access to exclusive drops and surprising content.",
   "private": true,
   "dependencies": {
+    "@maticnetwork/walletconnect-provider": "^0.0.1-beta.1",
     "bootstrap": "^5.1.3",
+    "maticjs": "^1.0.1",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.4",
     "react-confetti": "^6.0.1",
