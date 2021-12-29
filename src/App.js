@@ -398,7 +398,7 @@ function App() {
               </Col>
               <Col>
               <a href="https://nftcalendar.io/event/graypunks" target="_blank" rel="noreferrer" title="NFTcalendar">
-                <img src={NFTCalendar} style={{width: '35'}} />
+                <img src={NFTCalendar} width="35" />
                </a>
               </Col>
         </Row>
