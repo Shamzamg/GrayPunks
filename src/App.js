@@ -387,7 +387,7 @@ function App() {
           {isMobile ? (<></>) : (<>
             <p>Please make sure you are connected to the right network (
             {CONFIG.NETWORK.NAME} Mainnet) and the correct address.</p> 
-            <p>Please note: Once you make the purchase, you cannot undo this action.</p>
+            <p>Please note: Once you join this world, nothing will feel the same...</p>
           </>)}
           </Col>
         </Row>
