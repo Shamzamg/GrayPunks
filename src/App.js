@@ -393,10 +393,7 @@ function App() {
         </Row>
 
         <Row style={{ display: "flex", flexDirection: "column", justifyContent: "center", marginBottom: '20px'}}>
-              <Col md={2}>
-                As seen on
-              </Col>
-              <Col>
+              <Col style={{ display: "flex", justifyContent: "center" }}>
               <a href="https://nftcalendar.io/event/graypunks" target="_blank" rel="noreferrer" title="NFTcalendar">
                 <img src={NFTCalendar} width="100" />
                </a>
