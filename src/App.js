@@ -382,7 +382,7 @@ function App() {
         
         <s.SpacerMedium />
 
-        <Row style={{ display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center", marginBottom: '50px'}}>
+        <Row style={{ display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center", marginBottom: '20px'}}>
           <Col>
           {isMobile ? (<></>) : (<>
             <p>Please make sure you are connected to the right network (
@@ -392,13 +392,13 @@ function App() {
           </Col>
         </Row>
 
-        <Row>
+        <Row style={{ display: "flex", flexDirection: "row", justifyContent: "center", marginBottom: '20px'}}>
               <Col md={2}>
                 As seen on
               </Col>
               <Col>
               <a href="https://nftcalendar.io/event/graypunks" target="_blank" rel="noreferrer" title="NFTcalendar">
-                <img src={NFTCalendar} style={{width: '35'}}>
+                <img src={NFTCalendar} style={{width: '35'}} />
                </a>
               </Col>
         </Row>
