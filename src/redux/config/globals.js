@@ -1,4 +1,4 @@
-export const RPC_URL = 'https://rpc-mainnet.maticvigil.com/';
+export const RPC_URL = 'https://rpc-mainnet.matic.network/';
 export const CHAIN_ID = 137;
 export const NETWORK_INFOS = {
     "id": 1,
@@ -9,7 +9,7 @@ export const NETWORK_INFOS = {
         "chainId": "0x89",
         "chainName": "Matic Mainnet",
         "rpcUrls": [
-          "https://rpc-mainnet.maticvigil.com/"
+          "https://rpc-mainnet.matic.network/"
         ],
         "nativeCurrency": {
           "name": "MATIC",
